@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './Social_Media_Post_01_1080_x_1080_px.png'
+import logo from './centre_logo.png'
 import './Mainpage.css'
 import vector1 from './Vector.svg'
 import yellow from './yellow.svg' 
@@ -20,20 +20,20 @@ const Mainpage = () => {
           <div className="main">
             <h1>Google Developer Student Clubs</h1>
             <h2 className="sub-title">
-              Jaypee Institute Of Information Technology-62
+              Jaypee Institute Of Information Technology, Noida-62
             </h2>
             <h4>Presents</h4>
           </div>
         </div>
         <div className="sub-main">
-          <h1 className="events">HACKIN' SUMMER 2023</h1>
-          <h3 className="dates">23rd-24th Sept</h3>
+          <h1 className="events">HACKIN' SUMMERS 2023</h1>
+          <h3 className="dates">September 23-24, 2023</h3>
         </div>
         <div>
           <h2 className="text">
-            This Summer season will be full of exciting and engaging events
-            powered with overwhelming prizes to give you a good sense of
-            achievment.
+            Gear up for a summer that is going to bring you
+            a hackathon worth remembering. Scroll down for 
+            registrations and prizes!
           </h2>
         </div>
         <div>

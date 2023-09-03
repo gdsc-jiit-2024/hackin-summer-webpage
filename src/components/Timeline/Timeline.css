@@ -1,0 +1,77 @@
+.timelineDiv {
+    font-family: sans-serif;
+    font-style: normal;
+  }
+  
+  .head1 {
+    color: #4285f3;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .vertical-timeline-element-date {
+    border: 2px solid black;
+    border-radius: 30px;
+    max-width: 150px;
+    align-items: center;
+    color: black;
+  
+  }
+  
+  .vertical-timeline-element-content {
+    text-align: center;
+  }
+  
+  .vertical-timeline-element--work.odd .vertical-timeline-element-content {
+    text-align: left;
+  }
+  
+  .vertical-timeline-element--work.even .vertical-timeline-element-content {
+    text-align: right;
+  }
+  
+  .vertical-timeline-element--work.odd .vertical-timeline-element-date {
+    padding-right: 30px;
+  }
+  
+  .vertical-timeline-element--work.even .vertical-timeline-element-date {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .vertical-timeline-element--work.odd .vertical-timeline-element-content,
+    .vertical-timeline-element--work.even .vertical-timeline-element-content {
+      text-align: left;
+    }
+  
+    .vertical-timeline-element--work.odd .vertical-timeline-element-date {
+      padding-right: 4px;
+    }
+  
+    .vertical-timeline-element--work.even .vertical-timeline-element-date {
+      text-align: center;
+    }
+    .vertical-timeline-element-date {
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 100px;
+      text-align: center;
+      color: black;
+      font-size: x-small;
+    }
+  
+    .head1 {
+      color: #4285f3;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  

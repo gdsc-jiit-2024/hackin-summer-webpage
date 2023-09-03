@@ -1,75 +1,75 @@
 *{
-background-color: #f2f2f2;
-font-family: 'GoogleSansRegular', sans-serif;
-}
-
-.main-page{
-    border-left: 3px dotted #f8f7f7;
-    height: 100vh; 
-    margin-left: 10px; 
-    margin-right: 10px; 
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    /* background-color: #f2f2f2; placed in app.css  */ 
     font-family: 'GoogleSansRegular', sans-serif;
-    font-weight: 300;
-}
-.red-image{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.title{
-    margin-top: 50px;
-    padding-top: 50px;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    color:#141718;
-    line-height: 50.4px;
-}
-.sub-title{
-    color: #0CBF69;
-}
-.upper-title{
-    align-self: center;
-}
-.sub-main{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.events{
-    height: 90%;
-}
-.text{
-    transform: translateX(50%);
-    width: 50%;
-    font-family: 'GoogleSansRegular', sans-serif;
-}
-
-.blue-image{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.yellow-image{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.green-image{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.events {
-  margin-bottom: 5px; /* Add a small margin at the bottom */
-}
-
-.dates {
-  margin-top: 5px; /* Add a small margin at the top */
-}
+    }
+    
+    .main-page{
+        border-left: 3px dotted #f8f7f7;
+        height: 100vh; 
+        margin-left: 10px; 
+        margin-right: 10px; 
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        font-family: 'GoogleSansRegular', sans-serif;
+        font-weight: 300;
+    }
+    .red-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .title{
+        margin-top: 50px;
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        color:#141718;
+        line-height: 50.4px;
+    }
+    .sub-title{
+        color: #0CBF69;
+    }
+    .upper-title{
+        align-self: center;
+    }
+    .sub-main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .events{
+        height: 90%;
+    }
+    .text{
+        transform: translateX(50%);
+        width: 50%;
+        font-family: 'GoogleSansRegular', sans-serif;
+    }
+    
+    .blue-image{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .yellow-image{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .green-image{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .events {
+      margin-bottom: 5px; /* Add a small margin at the bottom */
+    }
+    
+    .dates {
+      margin-top: 5px; /* Add a small margin at the top */
+    }

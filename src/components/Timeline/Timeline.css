@@ -1,0 +1,78 @@
+*{
+    font-family: 'GoogleSansRegular', sans-serif;
+  }
+  
+  
+  .head1 {
+    color: #4285f3;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal; 
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+  }
+  
+  .vertical-timeline-element-date {
+    border: 2px solid black;
+    border-radius: 30px;
+    max-width: 150px;
+    font-weight: 900;
+    align-items: center;
+    color: black;
+  
+  
+  }
+  
+  .vertical-timeline-element-content {
+    text-align: center;
+    
+  }
+  
+  .vertical-timeline-element--work.odd .vertical-timeline-element-content {
+    text-align: left;
+  }
+  
+  .vertical-timeline-element--work.even .vertical-timeline-element-content {
+    text-align: right;
+  }
+  
+  .vertical-timeline-element--work.odd .vertical-timeline-element-date {
+    padding-right: 30px;
+  }
+  
+  .vertical-timeline-element--work.even .vertical-timeline-element-date {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .vertical-timeline-element--work.odd .vertical-timeline-element-content,
+    .vertical-timeline-element--work.even .vertical-timeline-element-content {
+      text-align: left;
+    }
+  
+    .vertical-timeline-element--work.odd .vertical-timeline-element-date {
+      padding-right: 4px;
+    }
+  
+    .vertical-timeline-element--work.even .vertical-timeline-element-date {
+      text-align: center;
+    }
+    .vertical-timeline-element-date {
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 100px;
+      text-align: center;
+      color: black;
+      font-size: x-small;
+    }
+  
+    .head1 {
+      color: #4285f3;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+/* About.css */
+.text {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Create space between the left and right divs */
+}
+
+.about-left {
+  width: 50%; 
+  height: 100%;
+  /* Adjust the width as needed */
+}
+
+.about-right {
+  width: 50%; /* Adjust the width as needed */
+  text-align: right; /* Align text to the right within the right div */
+}
+
+
+/* Your CSS */
+.about-left {
+  font-size: medium;
+  animation: slideFromLeft 1s ease-in-out; /* Apply slideFromLeft animation */
+}
+
+.about-right {
+  animation: slideFromRight 1s ease-in-out; /* Apply slideFromRight animation */
+}
+
+/* Keyframes animations */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%); /* Start from the left side */
+  }
+  100% {
+    transform: translateX(0); /* End at its original position */
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%); /* Start from the right side */
+  }
+  100% {
+    transform: translateX(0); /* End at its original position */
+  }
+}

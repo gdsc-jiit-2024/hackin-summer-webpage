@@ -1,5 +1,6 @@
 *{
 background-color: #f2f2f2;
+font-family: 'GoogleSansRegular', sans-serif;
 }
 
 .main-page{
@@ -10,7 +11,7 @@ background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'GoogleSansRegular', sans-serif;
     font-weight: 300;
 }
 .red-image{
@@ -44,7 +45,7 @@ background-color: #f2f2f2;
 .text{
     transform: translateX(50%);
     width: 50%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'GoogleSansRegular', sans-serif;
 }
 
 .blue-image{

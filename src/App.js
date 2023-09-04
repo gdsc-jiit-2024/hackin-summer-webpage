@@ -6,6 +6,8 @@ import Attraction from './components/Attraction/Attraction';
 import Mainpage from './components/Mainpage/Mainpage';
 import About from './components/About/About';
 import Countdown from './components/countdown/Countdown';
+// import { Form } from 'react-router-dom';
+import Form from './components/Form/Form';
 function App() {
     createRoot(document.getElementById("root")).render(
 
@@ -16,6 +18,7 @@ function App() {
         <Attraction />
       </Suspense>
       <Countdown />
+      <Form />
     </div>
   );
 }

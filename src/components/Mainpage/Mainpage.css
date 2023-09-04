@@ -73,3 +73,35 @@ font-family: 'GoogleSansRegular', sans-serif;
 .dates {
   margin-top: 5px; /* Add a small margin at the top */
 }
+.blue-image, .green-image {
+  animation: moveInOut 2s linear infinite; /* 4s duration, linear easing, infinite loop */
+}
+
+@keyframes moveInOut {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, -5px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-5px, 5px);
+  }
+}
+
+.red-image, .yellow-image {
+  animation: moveUpDown 3s ease-in-out infinite; /* 3s duration, easing in and out, infinite loop */
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

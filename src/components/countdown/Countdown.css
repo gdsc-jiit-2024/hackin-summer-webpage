@@ -1,10 +1,13 @@
 /* Countdown.css */
+
 .countdown-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
 }
 
 .countdown-horizontal {
@@ -16,21 +19,83 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0 10px; /* Add margin between units as needed */
+  padding: 10px; /* Add padding to create space around units */
+  border-radius: 10px; /* Add border-radius for glassy effect */
+  width: 100px; /* Set the width for each unit */
+  backdrop-filter: blur(10px); /* Apply backdrop filter for glassy effect */
 }
 
-.unit-name {
-  font-size: 1.2rem;
-  margin-top: 0.2rem; /* Adjust margin as needed */
+.countdown-content-red {
+  background-color: rgba(255, 0, 0, 0.3); /* Red background color with transparency */
 }
 
+.countdown-content-yellow {
+  background-color: rgba(255, 255, 0, 0.3); /* Yellow background color with transparency */
+}
+
+.countdown-content-green {
+  background-color: rgba(0, 255, 0, 0.3); /* Green background color with transparency */
+}
+
+.countdown-content-blue {
+  background-color: rgba(0, 0, 255, 0.3); /* Blue background color with transparency */
+}
+
+.unit-name,
 .unit-value {
   font-size: 2rem;
   font-weight: bold;
+  background: inherit; /* Inherit the background color from the parent div */
+  -webkit-background-clip: text; /* Clip text to the background for the same color effect */
+
 }
 
 .animation-container {
   margin-top: 20px; /* Adjust margin as needed */
   width: 100%; /* Set the desired width for the animation */
   max-width: 400px; /* Adjust the maximum width as needed */
+}
+/* Countdown.css */
+
+/* ... (previous CSS rules) ... */
+
+@keyframes flip-top {
+  to {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes flip-bottom {
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.top-half.flip {
+  animation: flip-top 0.5s ease-in forwards;
+}
+
+.bottom-half.flip {
+  animation: flip-bottom 0.5s ease-out 0.5s forwards;
+}
+@keyframes flip-top {
+  to {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes flip-bottom {
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.top-half.flip {
+  animation: flip-top 0.5s ease-in forwards;
+}
+
+.bottom-half.flip {
+  animation: flip-bottom 0.5s ease-out 0.5s forwards;
 }

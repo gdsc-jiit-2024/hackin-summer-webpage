@@ -21,6 +21,14 @@ body {
  font-weight: normal;
 }
 
+@font-face {
+  font-family: "IronMan";
+  src: local("IronMan"),
+  url(./fonts/iron-man-of-war-font/IronManOfWar001ANcv-6d2Y.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

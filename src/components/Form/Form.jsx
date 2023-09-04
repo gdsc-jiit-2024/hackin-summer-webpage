@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import formImage from "../public/form.png";
+import formImage from "./form.png";
 import './Form.css'
 import SihTrack from './SihTrack'
 import InternalTrack from './InternalTrack'

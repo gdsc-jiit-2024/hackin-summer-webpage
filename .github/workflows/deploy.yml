@@ -4,18 +4,23 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
         run: |
@@ -29,4 +34,3 @@ jobs:
         run: |
           npm install -g gh-pages
           gh-pages -d build -b gh-pages -t true
-

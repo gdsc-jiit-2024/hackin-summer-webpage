@@ -6,6 +6,7 @@ import Attraction from './components/Attraction/Attraction';
 import Mainpage from './components/Mainpage/Mainpage';
 import About from './components/About/About';
 import Countdown from './components/countdown/Countdown';
+import Track from "./components/Tracks/Tracks";
 // import { Form } from 'react-router-dom';
 import Form from './components/Form/Form';
 function App() {
@@ -15,9 +16,10 @@ function App() {
       <Mainpage />
       <About />
       <Suspense fallback={null}>
-        <Attraction />
+        {/* <Attraction /> */}
       </Suspense>
       <Countdown />
+      <Track />
       <Form />
     </div>
   );

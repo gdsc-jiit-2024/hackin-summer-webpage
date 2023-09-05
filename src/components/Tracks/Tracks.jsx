@@ -1,5 +1,5 @@
 import React from "react";
-import "./tracks.css";
+import "./Tracks.css";
 
 const Tracks = () => {
     return (

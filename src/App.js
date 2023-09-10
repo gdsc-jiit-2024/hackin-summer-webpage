@@ -7,6 +7,7 @@ import Mainpage from './components/Mainpage/Mainpage';
 import About from './components/About/About';
 import Countdown from './components/countdown/Countdown';
 import Track from "./components/Tracks/Tracks";
+import Timeline from './components/Timeline/Timeline';
 // import { Form } from 'react-router-dom';
 import Form from './components/Form/Form';
 function App() {
@@ -20,6 +21,7 @@ function App() {
       </Suspense>
       <Countdown />
       <Track />
+      <Timeline />
       <Form />
     </div>
   );

@@ -8,7 +8,6 @@ import About from './components/About/About';
 import Countdown from './components/countdown/Countdown';
 import Track from "./components/Tracks/Tracks";
 import Form from './components/Form/Form';
-import New from './components/New/New';
 function App() {
     createRoot(document.getElementById('root')).render(
       <div className="App">

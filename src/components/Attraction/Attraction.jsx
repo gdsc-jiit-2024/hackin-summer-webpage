@@ -15,8 +15,6 @@ const baubleMaterial = new THREE.MeshStandardMaterial({
   envMapIntensity: 1,
 });
 
-
-
 const Attraction = () => {
   return (
     <Canvas shadows gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}>
@@ -27,7 +25,7 @@ const Attraction = () => {
       <Pointer />
       <Clump />
     </Physics>
-    <Environment files="./adamsbridge.hdr" />
+    <Environment files="/adamsbridge.hdr" />
     <EffectComposer disableNormalPass multisampling={0}>
       <N8AO halfRes color="black" aoRadius={2} intensity={1} aoSamples={6} denoiseSamples={4} />
       <SMAA />
@@ -36,7 +34,7 @@ const Attraction = () => {
 )
 
 function Clump({ mat = new THREE.Matrix4(), vec = new THREE.Vector3(), ...props }) {
-  const texture = useTexture("./centre_logo.png")
+  const texture = useTexture("/centre_logo.png")
   const [ref, api] = useSphere(() => ({ args: [1], mass: 1, angularDamping: 0.1, linearDamping: 0.65, position: [rfs(20), rfs(20), rfs(20)] }))
   useFrame((state) => {
     for (let i = 0; i < 40; i++) {
@@ -50,7 +48,7 @@ function Clump({ mat = new THREE.Matrix4(), vec = new THREE.Vector3(), ...props 
 function Pointer() {
   const viewport = useThree((state) => state.viewport)
   const [, api] = useSphere(() => ({ type: "Kinematic", args: [3], position: [0, 0, 0] }))
-  return useFrame((state) => api.position.set((state.mouse.x * viewport.width) / 2, (state.mouse.y * viewport.height), 0))
+  return useFrame((state) => api.position.set((state.mouse.x * viewport.width) / 2, (state.mouse.y * viewport.height) / 2, 0))
 }
 } 
 export default Attraction; 

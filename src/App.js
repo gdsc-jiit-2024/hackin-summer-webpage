@@ -7,17 +7,24 @@ import Mainpage from './components/Mainpage/Mainpage';
 import About from './components/About/About';
 import Countdown from './components/countdown/Countdown';
 import Track from "./components/Tracks/Tracks";
+import Timeline from './components/Timeline/Timeline';
+// import { Form } from 'react-router-dom';
 import Form from './components/Form/Form';
 function App() {
-    createRoot(document.getElementById('root')).render(
-      <div className="App">
-        <Mainpage />
-        <About />
-        <Countdown />
-        <Track />
-        <Form />
-      </div>
-    );
+    createRoot(document.getElementById("root")).render(
+
+    <div className="App">
+      <Mainpage />
+      <About />
+      <Suspense fallback={null}>
+        {/* <Attraction /> */}
+      </Suspense>
+      <Countdown />
+      <Track />
+      <Timeline />
+      <Form />
+    </div>
+  );
 }
 
 export default App;
